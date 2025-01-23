@@ -2,7 +2,7 @@ import type React from "react"
 import { useState, useCallback } from "react"
 import { Handle, Position, type NodeProps } from "reactflow"
 
-export default function CircleNode({ data, id }: NodeProps) {
+export default function CircleNode({ data }: NodeProps) {
   const [label, setLabel] = useState(data.label)
   const [isEditing, setIsEditing] = useState(false)
 

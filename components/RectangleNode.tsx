@@ -2,7 +2,7 @@ import { useState, useCallback } from "react"
 import { Handle, Position, type NodeProps } from "reactflow"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
-export default function RectangleNode({ data, id }: NodeProps) {
+export default function RectangleNode({ data }: NodeProps) {
   const [label, setLabel] = useState(data.label)
   const [isEditing, setIsEditing] = useState(false)
   const [selectedType, setSelectedType] = useState(data.type || "Type A")

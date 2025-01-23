@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react"
 import { Handle, Position, type NodeProps } from "reactflow"
 
-export default function DiamondNode({ data, id }: NodeProps) {
+export default function DiamondNode({ data }: NodeProps) {
   const [label, setLabel] = useState(data.label)
   const [isEditing, setIsEditing] = useState(false)
 
